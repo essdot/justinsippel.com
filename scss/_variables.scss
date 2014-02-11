@@ -1,0 +1,22 @@
+$font-size: 16px;
+$background: #229C75;
+$background-edge: darken($background, 10%);
+
+$tag-color: #D3CD7B;
+$tag-hole-covering-color: #74490F;
+$name-color: 353244;
+
+$tag-target-width: 450px;
+$tag-target-height: 250px;
+$tag-height: #{ $tag-target-height / $font-size}rem;
+$tag-width: #{ $tag-target-width / $font-size}rem;
+$tag-shadow-color: #2e5e43;
+
+$hole-covering-target-width: 60px;
+$hole-covering-target-height: $hole-covering-target-width;
+
+$hole-covering-width: #{ $hole-covering-target-width / $font-size }rem;
+$hole-covering-height: $hole-covering-width;
+
+$text-color: #e6e6e6;
+$text-shadow-color: darken($background, 20%);

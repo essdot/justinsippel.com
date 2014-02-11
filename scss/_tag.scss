@@ -1,0 +1,64 @@
+@import "compass/css3/transform";
+
+.tag {
+	background: $tag-color;
+	border-radius: 25px;
+	height: $tag-height;
+	width: $tag-width;
+
+	margin: auto;
+	margin-bottom: #{ 50px / $font-size}em;
+
+	position: relative;
+	left: #{ 50px / $font-size}em;
+
+	box-shadow: 
+		-5px 3px 5px $tag-shadow-color,
+		3px 3px 5px $tag-shadow-color;
+
+	@include transform(rotate(2deg));
+}
+
+.tag:before {
+	content: "";
+	border-style: solid;
+	border-color: transparent transparent $tag-color $tag-color;
+	border-width: #{ 94px / $font-size }em;
+	border-radius: #{ 20px / $font-size }em;
+	box-shadow: -3px 4px 3px $tag-shadow-color;
+	width: 0;
+	height: 0;
+
+	position: absolute;
+	top: #{ 31px / $font-size }em;
+	left: #{ (74px / $font-size) * -1 }em;
+
+	@include transform(rotate(45deg));
+}
+
+.hole-covering {
+	background: #74490F;
+	border-radius: 50%;
+	height: $hole-covering-height;
+	width: $hole-covering-width;
+	padding: percentage(20px / $tag-target-width);
+	
+	position: absolute;
+	top: #{ (($tag-target-height - $hole-covering-target-height) * .5) / $font-size }em;
+	left: -3em;
+
+	box-shadow: 2px 0 0 #696969,
+				-2px 0 0 #696969,
+				0 2px 0 #696969,
+				0 -2px 0 #696969;
+}
+
+.hole {
+	background: #178a54;
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+
+	box-shadow: inset 3px 3px 2px #385245;
+}
+

@@ -1,0 +1,24 @@
+@import "compass/css3/box-sizing";
+@import "compass/css3/images";
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+
+	font-size: $font-size;
+	line-height: 1.25;
+}
+
+body {
+	background: $background;
+	@include background-image(radial-gradient(circle at center, $background, $background-edge));
+}
+
+main {
+	margin: auto;
+	padding: 4em 0;
+}

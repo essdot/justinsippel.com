@@ -1,0 +1,123 @@
+/* === ANIMATIONS === */
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+
+  15% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); }
+
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-moz-keyframes pop {
+  0% {
+    -moz-transform: scale(1.05);
+    transform: scale(1.05); }
+
+  15% {
+    -moz-transform: scale(1.15);
+    transform: scale(1.15); }
+
+  50% {
+    -moz-transform: scale(0.9);
+    transform: scale(0.9); }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pop {
+  0% {
+    transform: scale(1.05); }
+
+  15% {
+    transform: scale(1.15); }
+
+  50% {
+    transform: scale(0.9); }
+
+  100% {
+    transform: scale(1); } }
+
+@-webkit-keyframes hello {
+  0% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg); }
+
+  33% {
+    -webkit-transform: rotateX(-20deg) rotate(-2deg);
+    transform: rotateX(-20deg) rotate(-2deg); }
+
+  66% {
+    -webkit-transform: rotateX(20deg) rotate(2deg);
+    transform: rotateX(20deg) rotate(2deg); }
+
+  100% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg); } }
+
+@-moz-keyframes hello {
+  0% {
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg); }
+
+  33% {
+    -moz-transform: rotateX(-20deg) rotate(-2deg);
+    transform: rotateX(-20deg) rotate(-2deg); }
+
+  66% {
+    -moz-transform: rotateX(20deg) rotate(2deg);
+    transform: rotateX(20deg) rotate(2deg); }
+
+  100% {
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg); } }
+
+@keyframes hello {
+  0% {
+    transform: rotate(2deg); }
+
+  33% {
+    transform: rotateX(-20deg) rotate(-2deg); }
+
+  66% {
+    transform: rotateX(20deg) rotate(2deg); }
+
+  100% {
+    transform: rotate(2deg); } }
+
+.tag,
+.tag:active {
+  -webkit-perspective: 350;
+  -moz-perspective: 350;
+  -ms-perspective: 350;
+  -o-perspective: 350;
+  perspective: 350;
+  -webkit-transform-origin: top 50%;
+  -moz-transform-origin: top 50%;
+  -ms-transform-origin: top 50%;
+  -o-transform-origin: top 50%;
+  transform-origin: top 50%;
+  -webkit-animation: hello .6s ease-in-out 100ms;
+  -moz-animation: hello .6s ease-in-out 100ms;
+  -ms-animation: hello .6s ease-in-out 100ms;
+  animation: hello .6s ease-in-out 100ms; }
+
+.tag {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  -ms-animation-delay: 2.5s;
+  animation-delay: 2.5s; }
+
+.svg-icon-link:hover {
+  -webkit-animation: pop .25s ease-in-out 30ms;
+  -moz-animation: pop .25s ease-in-out 30ms;
+  -ms-animation: pop .25s ease-in-out 30ms;
+  animation: pop .25s ease-in-out 30ms; }

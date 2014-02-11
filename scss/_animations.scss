@@ -1,0 +1,156 @@
+@import "compass/css3/transform";
+
+$pop-step-1-percent: 0%;
+$pop-step-2-percent: 15%;
+$pop-step-3-percent: 50%;
+$pop-step-4-percent: 100%;
+
+$pop-step-1: scale(1.05);
+$pop-step-2: scale(1.15);
+$pop-step-3: scale(0.9);
+$pop-step-4: scale(1.0);
+
+@-webkit-keyframes pop {
+	#{$pop-step-1-percent} {
+		-webkit-transform: $pop-step-1;
+		transform: $pop-step-1;
+	}
+	#{$pop-step-2-percent} {
+		-webkit-transform: $pop-step-2;
+		transform: $pop-step-2;
+	}
+	#{$pop-step-3-percent} {
+		-webkit-transform: $pop-step-3;
+		transform: $pop-step-3;
+	}
+	#{$pop-step-4-percent} {
+		-webkit-transform: $pop-step-4;
+		transform: $pop-step-4;
+	}
+}
+
+
+@-moz-keyframes pop {
+	#{$pop-step-1-percent} {
+		-moz-transform: $pop-step-1;
+		transform: $pop-step-1;
+	}
+	#{$pop-step-2-percent} {
+		-moz-transform: $pop-step-2;
+		transform: $pop-step-2;
+	}
+	#{$pop-step-3-percent} {
+		-moz-transform: $pop-step-3;
+		transform: $pop-step-3;
+	}
+	#{$pop-step-4-percent} {
+		-moz-transform: $pop-step-4;
+		transform: $pop-step-4;
+	}	
+}
+
+@keyframes pop {
+	#{$pop-step-1-percent} {
+		transform: $pop-step-1;
+	}
+	#{$pop-step-2-percent} {
+		transform: $pop-step-2;
+	}
+	#{$pop-step-3-percent} {
+		transform: $pop-step-3;
+	}
+	#{$pop-step-4-percent} {
+		transform: $pop-step-4;
+	}
+}
+
+$hello-step-1-percent: 0%;
+$hello-step-2-percent: 33%;
+$hello-step-3-percent: 66%;
+$hello-step-4-percent: 100%;
+
+$hello-step-1: rotate(2deg);
+$hello-step-2: rotateX(-20deg) rotate(-2deg);
+$hello-step-3: rotateX(20deg) rotate(2deg);
+$hello-step-4: rotate(2deg);
+
+
+@-webkit-keyframes hello {
+	0% { 
+		-webkit-transform: $hello-step-1;
+		transform: $hello-step-1;
+	}
+
+	33% {
+		-webkit-transform: $hello-step-2;
+		transform: $hello-step-2;
+	}
+	66% {
+		-webkit-transform: $hello-step-3;
+		transform: $hello-step-3;
+	}
+	100% {
+		-webkit-transform: $hello-step-4;
+		transform: $hello-step-4;
+	}
+}
+
+@-moz-keyframes hello {
+	0% { 
+		-moz-transform: $hello-step-1;
+		transform: $hello-step-1;
+	}
+
+	33% {
+		-moz-transform: $hello-step-2;
+		transform: $hello-step-2;
+	}
+	66% {
+		-moz-transform: $hello-step-3;
+		transform: $hello-step-3;
+	}
+	100% {
+		-moz-transform: $hello-step-4;
+		transform: $hello-step-4;
+	}
+}
+
+@keyframes hello {
+	0% { 
+		transform: rotate(2deg);
+	}
+	33% {
+		transform: rotateX(-20deg) rotate(-2deg);
+	}
+	66% {
+		transform: rotateX(20deg) rotate(2deg);
+	}
+	100% {
+		transform: rotate(2deg);
+	}
+}
+
+.tag,
+.tag:active {
+	@include perspective(350);
+	@include transform-origin(top, center);
+
+	-webkit-animation: hello .6s ease-in-out 100ms;
+	-moz-animation: hello .6s ease-in-out 100ms;
+	-ms-animation: hello .6s ease-in-out 100ms;
+	animation: hello .6s ease-in-out 100ms;
+}
+
+.tag {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.svg-icon-link:hover {
+	-webkit-animation: pop .25s ease-in-out 30ms;
+	-moz-animation: pop .25s ease-in-out 30ms;
+	-ms-animation: pop .25s ease-in-out 30ms;
+	animation: pop .25s ease-in-out 30ms;
+}
