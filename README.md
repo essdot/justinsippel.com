@@ -17,4 +17,6 @@ I have been privileged to work in many different areas of application developmen
 
 Some areas I have not explored as much include distributed systems and mobile apps, though I am familiar with Cocoa and Objective-C.
 
-I love making things better for people. And I love squashing bugs.
+❤👍
+🚫🐞
+(I love making things better for people. And I love squashing bugs.)
